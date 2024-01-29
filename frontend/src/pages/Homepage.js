@@ -25,7 +25,7 @@ const Homepage = () => {
 
    // get All category
  const getAllcategory = async() => {
-
+axios.defaults.withCredentials = true;
   try {
    const {data} = await axios.get('https://ecom-project-f2ck.vercel.app/api/v1/category/get-category')
    if (data?.success) {
