@@ -16,7 +16,7 @@ const Forgotpassword = () => {
     const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-         const res = await axios.post('https://ecom-project-tau.vercel.app/api/v1/auth/forgot-password', { email, newpassword, answer})
+         const res = await axios.post('https://kind-gray-caiman-hem.cyclic.app/api/v1/auth/forgot-password', { email, newpassword, answer})
 
        if (res && res.data.success) {
             toast.success(res.data &&res.data.message)
