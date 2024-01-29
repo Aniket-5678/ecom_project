@@ -36,9 +36,9 @@ app.use(cors(
 app.use(express.json())
 app.use(morgan('dev'))
 
-// app.use('*', function(req, res){
-//     res.sendFile(path.join(__dirname, '../frontend/build/index.html'));
-// });
+app.use('*', function(req, res){
+    res.sendFile(path.join(__dirname, '../frontend/build/index.html'));
+});
 
 
 app.use('/api/v1/auth', authRoutes)
