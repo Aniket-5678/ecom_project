@@ -28,7 +28,7 @@ const app = express()
 //midlewear
 app.use(cors(
     {
-        origin: ["https://kind-gray-caiman-hem.cyclic.app"],
+        origin: ["https://ecom-project-f2ck.vercel.app/"],
         method: ["GET", "POST"],
         credentials: true
     }
