@@ -1,0 +1,33 @@
+.adminmenu-container{
+    display: flex;
+}
+
+.menu-link{
+   display: flex;
+    flex-direction: column;
+    margin: 10px 40px;
+}
+.nav-menu{
+    text-align: center;
+    width: 250px;
+    height: 40px;
+    border: 1px solid #D3D3D3;
+    text-decoration: none;
+
+
+}
+.nav-menu p{
+    margin: 5px 0px;
+    color: grey;
+    font-size: 1.2rem;
+}
+.admin-user-details{
+  margin: 10px 20px;
+    width: 400px;
+    height: 300px;
+    border: 1px solid #D3D3D3 ;
+
+}
+.admin-user-details h3{
+     margin: 20px 10px;
+}

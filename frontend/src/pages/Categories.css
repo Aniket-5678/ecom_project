@@ -1,0 +1,33 @@
+.categories-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+
+}
+
+.categories-main {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0px;
+    width: 800px;
+    height: 600px;
+}
+
+
+.main-link{
+    border: 1px solid grey;
+    width: 300px;
+    height: 20px;
+    background-color: rgb(13, 126, 170);
+}
+.categories-link {
+    width: 300px;
+    height: 400px;
+    margin: 10px 20px;
+   
+    text-decoration: none;
+    border-radius: 5px;
+
+    color: white;
+}

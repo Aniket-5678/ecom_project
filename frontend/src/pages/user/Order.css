@@ -1,0 +1,43 @@
+.order-container{
+    display: flex;
+
+}
+
+
+.order-status{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 100px;
+}
+.order-table{
+    display: flex;
+   flex-direction: column;
+    border: 1px solid #D3D3D3;
+  background-color: aliceblue;
+
+}
+
+
+.thead-order{
+    border: 1px solid #D3D3D3;
+    text-align: center;
+    width: 500px;
+    height: 40px;
+    margin: 0px 20px;
+    background-color:#d8d8d8;
+}
+
+.tbody-order{
+    border: 1px solid #D3D3D3;
+    text-align: center;
+    width: 500px;
+    height: 40px;
+    margin: 0px 20px;
+    background-color: #d8d8d8;
+}
+
+.Allorders{
+    text-align: center;
+}
