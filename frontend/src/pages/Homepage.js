@@ -22,10 +22,9 @@ const Homepage = () => {
   const [loading, setLoading] = useState(false)
 
 
-
+axios.defaults.withCredentials = true;
    // get All category
  const getAllcategory = async() => {
-axios.defaults.withCredentials = true;
   try {
    const {data} = await axios.get('https://ecom-project-f2ck.vercel.app/api/v1/category/get-category')
    if (data?.success) {
@@ -48,7 +47,7 @@ useEffect(()=> {
 const getAllproduct = async() => {
   try {
        setLoading(true)
-     const {data} = await  axios.get(`/api/v1/product/product-list/${page}`)
+     const {data} = await  axios.get(`https://ecom-project-f2ck.vercel.app/api/v1/product/product-list/${page}`)
        setLoading(false)
        setProducts(data.products)
 
@@ -61,7 +60,7 @@ const getAllproduct = async() => {
   //get total
   const getTotal = async() => {
     try {
-       const {data} = await axios.get('/api/v1/product/product-count')
+       const {data} = await axios.get('https://ecom-project-f2ck.vercel.app/api/v1/product/product-count')
        setTotal(data?.total)
     } catch (error) {
       console.log(error);
@@ -81,7 +80,7 @@ const getAllproduct = async() => {
    
     try {
       setLoading(true)
-      const {data} = await axios.get(`/api/v1/product/product-list/${page}`)  
+      const {data} = await axios.get(`https://ecom-project-f2ck.vercel.app/api/v1/product/product-list/${page}`)  
       setLoading(false)
       setProducts([...products, ...data?.products])
     } catch (error) {
@@ -122,7 +121,7 @@ useEffect(()=> {
   
  const  filterProduct = async() => {
 try {
-  const {data} =  await axios.post(`/api/v1/product/product-filters`, {checked, radio})
+  const {data} =  await axios.post(`https://ecom-project-f2ck.vercel.app/api/v1/product/product-filters`, {checked, radio})
   setProducts(data?.products)
 } catch (error) {
   console.log(error);
