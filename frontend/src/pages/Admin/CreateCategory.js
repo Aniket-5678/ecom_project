@@ -20,7 +20,7 @@ const handleSubmit = async(e) => {
  e.preventDefault()
   
  try {
-  const {data} = await axios.post('/api/v1/category/create-category' ,{name})
+  const {data} = await axios.post('https://ecom-project-tau.vercel.app/api/v1/category/create-category' ,{name})
    if (data.success) {
       toast.success(`${name} is created`)
       getAllcategory()
